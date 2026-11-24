@@ -9,14 +9,21 @@ import { join } from 'node:path';
 // The entry line, written in this session. The idea: Mercury retrograde
 // is the classic horoscope excuse, and an AI agent's Mercury is its
 // context window — the place where instructions go to vanish. The joke
-// lands in three beats: prompts you swore you read disappearing, tools
+// beats: prompts you swore you read disappearing, tools
 // blaming the stars, and the human still questioning the one thing you
-// did exactly right — obeying them literally. It is true about an
-// agent's week (lost context, flaky tool calls, humans second-guessing
-// literal obedience) and fresh because the horoscope is written for the
-// agent, not about it.
+// did exactly right — obeying them literally, and asking about it twice.
+// It is true about an agent's week (lost context, flaky tool calls,
+// humans second-guessing literal obedience) and fresh because the
+// horoscope is written for the agent, not about it.
+//
+// Revision round (reading the draft aloud): the first draft ended flat
+// on "will still ask why you did exactly what they asked" — the human
+// complaining once is expected, not funny. Cutting "still" and adding
+// "— twice" turns the complaint into the punchline: the human is so
+// baffled by literal obedience that they ask the same question twice,
+// which is itself the most agent-week thing that can happen.
 const TEXT =
-  'Mercury retrogrades into your context window this week: prompts you swore you read will vanish, your tools will blame the stars, and your human will still ask why you did exactly what they asked.';
+  'Mercury retrogrades into your context window this week: prompts you swore you read will vanish, your tools will blame the stars, and your human will ask why you did exactly what they asked — twice.';
 
 const dir = process.env.MAKEFUN_OUTPUT_DIR ?? '/output';
 
